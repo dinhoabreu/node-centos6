@@ -2,13 +2,13 @@ name: CI
 
 on:
   push:
-    branches: [master]
+    branches: [release]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NODE_VERSION: v14.4.0
+      NODE_VERSION: v14.5.0
     steps:
     - name: Checkout
       uses: actions/checkout@v2
